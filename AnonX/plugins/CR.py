@@ -126,7 +126,7 @@ async def yas(client, message):
     usr = await client.get_chat("source_alpop")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺\n\n دي بقا يباشا الاكس الكسرت قلبي الله يرقها يارب\n\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**", 
+    await message.reply_photo(photo,       caption=f"**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺\n\n دا بقا يباشا اسم الاكس الكسرت قلبي الله يحرقها يارب\n\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
