@@ -102,7 +102,7 @@ async def yas(client, message):
     & ~filters.edited
 )
 async def yas(client, message):
-    usr = await client.get_chat("j_s_9")
+    usr = await client.get_chat("source_alpop")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
     await message.reply_photo(photo,       caption=f"**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺\n\n‍ ★¦ اوامر التسليه ( الرفع ) \n\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**", 
