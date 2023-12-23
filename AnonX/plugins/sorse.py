@@ -1,4 +1,3 @@
-
 import asyncio
 
 import os
@@ -15,24 +14,24 @@ from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from AnonX import app
 from random import  choice, randint
 @app.on_message(
-    command(["سورس مين","سورس","السورس","سورسي", "cr"])
+    command(["سورس مين","سورس","السورس","سورس مارو", "سورس البوب"])
     & ~filters.edited
 )
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://graph.org/file/c973727bddf803e028539.jpg",
+        photo=f"https://telegra.ph//file/8a417ee5ee410523952b3.jpg",
         caption=f"""𝘛𝘏𝘌 𝘉𝘌𝘚𝘛 𝘚𝘖𝘜𝘙𝘊𝘌 𝘖𝘕 𝘛𝘌𝘓𝘌𝘎𝘙𝘈𝘔""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "ꪑꪗ ᦔꫀꪜ", url=f"https://t.me/DEV_TOM"), 
+                        "𝑀𝐴𝑅𝑂", url=f"https://t.me/j_s_9"), 
                 
                     InlineKeyboardButton(
-                        "ᧁ𝘳ꪮꪊρ ᥴ𝘳", url=f"https://t.me/SORS0Coo"),
+                        "𝐴𝐿𝑃𝑂𝑃", url=f"https://t.me/vip_alpop"),
                 ],[
                     InlineKeyboardButton(
-                        "⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝", url=f"https://t.me/pp_g3"),
+                        " 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ", url=f"https://t.me/source_alpop"),
                 ],
 
             ]

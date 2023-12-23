@@ -91,7 +91,7 @@ async def nummmm(client: app, message):
   array.remove(message.chat.id)
 
 
-@app.on_message(command(["بس المنشن", "/cancel","بس منشن"]))
+@app.on_message(command(["بس المنشن", "/cancel","ايقاف تاك"]))
 async def stop(client, message):
   chek = await client.get_chat_member(message.chat.id, message.from_user.id)
   if not chek.status in ["administrator", "creator"]:

@@ -15,30 +15,30 @@ from random import  choice, randint
 
                 
 @app.on_message(
-    command(["مطورين سي ار","المطورين","مطورين","مطورين cr"])
+    command(["مطورين البوب","المطورين","مطورين","مطورين "])
     & ~filters.edited
 )
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://graph.org/file/c973727bddf803e028539.jpg",
-        caption=f"""**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺**\nمرحبا بك عزيزي {message.from_user.mention} في قسم مطورين cr ميوزك\nللتحدث مع مطورين اضغط علي الازرار بالاسفل👇\n**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺**""",
+        caption=f"""**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**\nمرحبا بك عزيزي {message.from_user.mention} في قسم مطورين البوب ميوزك\nللتحدث مع مطورين اضغط علي الازرار بالاسفل👇\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "᳒𝙏َِ𝙊َِ𝙈َِّّ ", url=f"https://t.me/DEV_TOM"), 
+                        "𝑀𝐴𝑅𝑂 ", url=f"https://t.me/j_s_9"), 
                  ],[
                     InlineKeyboardButton(
-                        "ρ᥆kᥱꪔ᥆ꪀ", url=f"https://t.me/devpokemon"),
+                        "𝐴𝐿𝑃𝑂𝑃", url=f"https://t.me/vip_alpop"),
                 ],[
                     InlineKeyboardButton(
-                        "𝐶𝑅𝐼𝑆𝑇𝐼𝑁", url=f"https://t.me/dr_criss"),
+                        "𝐶𝑂𝑀𝑀𝐔𝑁𝐼𝐶𝐴𝑇𝐼𝑂𝑁", url=f"https://t.me/O_U_O_BOT"),
                     InlineKeyboardButton(
-                        "ꪔᥲ️ꪀ᥆᥆", url=f"https://t.me/C1_I_I"),
+                        "𝐺𝑅𝑂𝐔𝑃", url=f"https://t.me/bar_alpop"),
                 ],[
                 
                     InlineKeyboardButton(
-                        "★⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝⚡", url=f"https://t.me/pp_g3"),
+                        "𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊", url=f"https://t.me/source_alpop"),
                 ],
 
             ]
@@ -55,15 +55,15 @@ async def huhh(client: Client, message: Message):
 
 
 @app.on_message(
-    command(["توم انجم","احمد","توم","مبرمج","TOM","tom"])
+    command(["ماروو","مارووو","الملك","مبرمج","maro","مارو"])
     & filters.group
     & ~filters.edited
 )
 async def yas(client, message):
-    usr = await client.get_chat("DEV_TOM")
+    usr = await client.get_chat("j_s_9")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺\n\n‍ ¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\n**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺**", 
+    await message.reply_photo(photo,       caption=f"**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺\n\n‍ ¦namee :{name}\n ¦u𝘴e𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥo :{usr.bio}\n\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -76,15 +76,15 @@ async def yas(client, message):
 
 
 @app.on_message(
-    command(["زين انجم","زين","زين","بوكمان","pokmon","pokman"])
+    command(["البوب","مطور","امير","elpop","alpop"])
     & filters.group
     & ~filters.edited
 )
 async def yas(client, message):
-    usr = await client.get_chat("devpokemon")
+    usr = await client.get_chat("vip_alpop")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺\n\n¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\n**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺**", 
+    await message.reply_photo(photo,       caption=f"**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺\n\n¦namee :{name}\n ¦u𝘴e𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥo :{usr.bio}\n\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -97,15 +97,41 @@ async def yas(client, message):
 
 
 @app.on_message(
-    command(["كريستين انجم","كريستين","كرستين","الدكتوره","cristin","كرستينه"])
+    command(["التسليه"])
     & filters.group
     & ~filters.edited
 )
 async def yas(client, message):
-    usr = await client.get_chat("dr_criss")
+    usr = await client.get_chat("j_s_9")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺\n\n‍ ¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\n**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺**", 
+    await message.reply_photo(photo,       caption=f"**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺\n\n‍ ★¦ اوامر التسليه ( الرفع )
+★¦ رفع نمله+تنزيل نمله
+★¦ رفع صرصار+تنزيل صرصار 
+★¦ رفع رقاصه+تنزيل رقاصه 
+★¦ رفع متناك+تنزيل متناك 
+★¦ رفع نجس+تنزيل نجس 
+★¦رفع عره+تنزيل عره
+★¦ رفع بقره+تنزيل بقره
+★¦ رفع قرد+تنزيل قرد
+★¦ رفع قلبي+تنزيل قلبي 
+★¦رفع خدام+تنزيل خدام
+★¦ رفع عرص+تنزيل عرص
+★¦ رفع ارمله+تنزيل ارمله
+★¦ رفع مزه+تنزيل مزه
+★¦رفع ابني+تنزيل ابني 
+★¦ رفع خاينه+تنزيل خاينه
+★¦ رفع بنتي+تنزيل بنتي
+★¦ رفع خاين+تنزيل خاين
+★¦ رفع خول+تنزيل خول
+★¦ رفع حمار+تنزيل حمار 
+★¦ رفع غبي+تنزيل غبي 
+★¦ رفع مراتي+تنزيل مراتي 
+★¦ رفع زبال+تنزيل زبال
+★¦ رفع خدامه+تنزيل خدامه
+★¦ رفع كلبه+تنزيل كلبه
+★¦ رفع طيز+تنزيل طيز 
+★¦ رفع حرامي+تنزيل حرامي \n\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -118,7 +144,7 @@ async def yas(client, message):
     
 
 @app.on_message(
-    command(["مانو انجم","مانو","الممول","mano","Mano"])
+    command(["هديه"])
     & filters.group
     & ~filters.edited
 )
@@ -126,7 +152,7 @@ async def yas(client, message):
     usr = await client.get_chat("C1_I_I")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺\n\n ¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\n**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺**", 
+    await message.reply_photo(photo,       caption=f"**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺\n\n دي بقا يباشا الاكس الكسرت قلبي الله يرقها يارب\n\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -147,16 +173,16 @@ async def yas(client, message):
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://graph.org/file/c973727bddf803e028539.jpg",
-        caption=f"""**⩹⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━━⩺**\nمرحبا بك عزيزي {message.from_user.mention} في قسم الذكاء الاصتناعي الخاص بسورس cr\nلتتمكن من استخدام اوامر الذكاء الاصتناعي اكتب \n /gpt + السؤال بالاسفل👇\n**⩹━━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━━⩺**""",
+        caption=f"""**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**\nمرحبا بك عزيزي {message.from_user.mention} في قسم الذكاء الاصتناعي الخاص بسورس cr\nلتتمكن من استخدام اوامر الذكاء الاصتناعي اكتب \n /gpt + السؤال بالاسفل👇\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "᳒𝙏َِ𝙊َِ𝙈َِّّ", url=f"https://t.me/DEV_TOM"), 
+                        "𝐴𝐿𝑃𝑂𝑃", url=f"https://t.me/vip_alpop"), 
                  ],[
                 
                     InlineKeyboardButton(
-                        "★⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝⚡", url=f"https://t.me/pp_g3"),
+                        "𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊", url=f"https://t.me/source_alpop"),
                 ],
 
             ]
@@ -167,32 +193,3 @@ async def huhh(client: Client, message: Message):
 
 
 
-@app.on_message(
-    command(["قرأن"])
-    & ~filters.edited
-    
-)
-async def huhh(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://graph.org/file/c973727bddf803e028539.jpg",
-        caption=f"""**⩹⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━━⩺**\nمرحبا بك عزيزي {message.from_user.mention} في قسم تشغيل القرأن الخاص بسورس cr\nلتتمكن من استخدام اوامر القرأن اكتب \n سورة + اسم السورة بالاسفل👇\n**⩹━━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━━⩺**""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "᳒𝙏َِ𝙊َِ𝙈َِّّ", url=f"https://t.me/DEV_TOM"), 
-                 ],[
-                
-                    InlineKeyboardButton(
-                        "★⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝⚡", url=f"https://t.me/pp_g3"),
-                ],
-
-            ]
-
-        ),
-
-    )
-
-
-
-    

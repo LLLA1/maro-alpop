@@ -20,8 +20,8 @@ from pyrogram.errors import MessageNotModified
 )
 async def cr_source(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://graph.org/file/c973727bddf803e028539.jpg",
-        caption=f"""**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺**\nمرحبا بك عزيزي {message.from_user.mention}\nهذا قسم الاوامر الخاص بسورس كرستين \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇\n**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺**""",
+        photo=f"https://telegra.ph//file/8a417ee5ee410523952b3.jpg",
+        caption=f"""**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**\nمرحبا بك عزيزي {message.from_user.mention}\nهذا قسم الاوامر الخاص بسورس البوب \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -35,7 +35,7 @@ async def cr_source(client: Client, message: Message):
                 ],[
                 
                     InlineKeyboardButton(
-                        "★⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝⚡", url=f"https://t.me/pp_g3"),
+                        "𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ", url=f"https://t.me/source_alpop"),
                 ],
 
             ]
@@ -49,7 +49,7 @@ async def cr_source(client: Client, message: Message):
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
-        text="""**⩹━★⊷⌯⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝⌯⊶★━⩺**
+        text="""**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**
 ★¦ اهلا بك عزيزي في قسم اوامر التشغيل في الجروبات
 ★¦ تشغيل + اسم الاغنيه
 ★¦ فديو + اسم الاغنيه
@@ -74,7 +74,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
 ★¦ vplay + اسم الاغنيه
 ★¦ play + اسم الاغنيه
 
-**⩹━★⊷⌯⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝⌯⊶★━⩺**""",
+**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -94,7 +94,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
-        text="""**⩹━★⊷⌯⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝⌯⊶★━⩺**
+        text="""**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**
 ★¦ اهلا بك عزيزي في قسم اوامر التشغيل في القنوات
 ★¦ شغل + اسم الاغنيه
 ★¦ قناه + اسم الاغنيه
@@ -103,7 +103,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
 ★¦ اغاني + اسم الاغنيه
 ★¦ . + اسم الاغنيه
 ★¦ / + اسم الاغنيه
-**⩹━★⊷⌯⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝⌯⊶★━⩺**""",
+**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -124,7 +124,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
-        text="""**⩹━★⊷⌯⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝⌯⊶★━⩺**
+        text="""**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**
 ★¦ اهلا بك عزيزي في قسم اوامر تشغيل الادمن
 ★¦ رفع ثانوي
 ★¦ تنزيل ثانوي
@@ -162,7 +162,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
 ★¦ الاعدادت
 ★¦ بينج
 
-**⩹━★⊷⌯⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝⌯⊶★━⩺**""",
+** 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 **""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -183,8 +183,8 @@ async def cr_usage(_, callback_query: CallbackQuery):
 @app.on_callback_query(filters.regex("back"))
 async def cr_back(_, callback_query: CallbackQuery):
     await message.reply_photo(
-        photo=f"https://graph.org/file/c973727bddf803e028539.jpg",
-        caption=f"""**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺**\nمرحبا بك عزيزي {message.from_user.mention}\nهذا قسم الاوامر الخاص بسورس كرستين \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇\n**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺**""",
+        photo=f"https://telegra.ph//file/8a417ee5ee410523952b3.jpg",
+        caption=f"""**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**\nمرحبا بك عزيزي {message.from_user.mention}\nهذا قسم الاوامر الخاص بسورس البوب \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇\n**⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -198,7 +198,7 @@ async def cr_back(_, callback_query: CallbackQuery):
                 ],[
                 
                     InlineKeyboardButton(
-                        "★⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝⚡", url=f"https://t.me/pp_g3"),
+                        "𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ", url=f"https://t.me/source_alpop"),
                 ],
 
             ]
