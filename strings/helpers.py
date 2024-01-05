@@ -64,17 +64,17 @@ HELP_4 = """🍒 **<u>ʙʀᴏᴀᴅᴄᴀsᴛ ғᴇᴀᴛᴜʀᴇ</u>** [ᴏɴʟ
 
 **ᴇxᴀᴍᴩʟᴇ:** `/broadcast -user -assistant -pin ᴛᴇsᴛɪɴɢ ʙʀᴏᴀᴅᴄᴀsᴛ`
 """
-HELP_5 = """⚡<u>⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝مطورين :</u>
+HELP_5 = """⚡<u>⌞𝑆𝑂𝐔𝑅𝐶𝐸 𝐴𝐿𝑃𝑂𝑃⌝مطورين :</u>
 
-[ᯓ𓆩˹ ََ𝙏َِ𝙊َِ𝙈ِ ،ِّّ⸙⛥َٰ ( ٍّالبشمبرمج)⏤‌𓆃](https://t.me/DEV_TOM)
+[𝑀𝐴𝑅𝑂](https://t.me/j_s_9)
 
-[ᯓ𓆩˹◉ρ᥆kᥱꪔ᥆ꪀ«ممول» ⚝ َٰ𝙎 ❨ᴧꝛᴛᴇx❩ ˼𓆪𓆃](https://t.me/C1_I_I)
+[𝐴𝐿𝑃𝑂𝑃](https://t.me/vip_alpop)
 
-[𓌹 ↱ كــيـنـج صــاحـب الــغـداريـن ↲ 𓌺](https://t.me/TR_E2S_ON_MY_MOoN)
+[𝐺𝑅𝑂𝐔𝑃](https://t.me/bar_alpop)
 
-[ᯓ𓆩˹◉ ꪔᥲ️ꪀ᥆᥆ ⚝ َٰ❨𝙎❩ ❨ᴧꝛᴛᴇx❩ ˼𓆪𓆃](https://t.me/DEV_TOM)
+[𝐶𝑂𝑀𝑀𝐔𝑁𝐼𝐶𝐴𝑇𝐼𝑂𝑁](https://t.me/O_U_O_BOT)
 
-[𝙲 . 𝚁 . 𝙸 . 𝚂 . 𝚃 . 𝙸 . 𝙽 ](https://t.me/dr_criss)
+[𝑆𝑂𝐔𝑅𝐶𝐸 𝐴𝐿𝑃𝑂𝑃](https://t.me/source_alpop)
 
 
 
