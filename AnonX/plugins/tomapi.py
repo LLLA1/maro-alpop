@@ -74,8 +74,8 @@ async def cr_back(_, callback_query: CallbackQuery):
     await message.edit_reply_markup(reply_markup=InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("طريقة الإستخدام", callback_data="tommm")],
-            [InlineKeyboardButton("𝑀𝐴𝑅𝑂", url=f"https://t.me/DEV_TOM"),
-             InlineKeyboardButton("𝐴𝐿𝑃𝑂𝑃", url=f"https://t.me/devpokemon")],
+            [InlineKeyboardButton("𝑀𝐴𝑅𝑂", url=f"https://t.me/j_S_9"),
+             InlineKeyboardButton("𝐴𝐿𝑃𝑂𝑃", url=f"https://t.me/vip_alpop")],
             [InlineKeyboardButton(" 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ", url=f"https://t.me/source_alpop")],
         ]
     ))
