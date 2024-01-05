@@ -1,7 +1,7 @@
 {
-    "name": "cr ダ ᴍᴜsɪᴄ",
+    "name": " 𝐒𝐎𝗨𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𝐌𝗨𝐒𝐈𝐂 ",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://telegra.ph/file/56d1760224589ee370186.jpg",
+    "logo": "https://telegra.ph/file/f698f60484b7aef0d6f29.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -13,17 +13,17 @@
     ],
     "env": {
       "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": " هاتو من هنا https://my.telegram.org",
         "value": "",
         "required": true
       },
       "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": " هاتو من هنا https://my.telegram.org",
         "value": "",
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
+        "description": " توكن البوت من بوت فاذر @BotFather",
         "value": "",
         "required": true
       },
@@ -33,32 +33,32 @@
         "required": false
       },
       "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
-        "value": "cr ダ ᴍᴜsɪᴄ",
+        "description": " اسم البوت بتاعك يبلف ",
+        "value": "𝑴𝑼𝑺𝑰𝑪 𝑨𝑳𝑷𝑶𝑷",
         "required": true
       },
       "OWNER_ID": {
-        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
+        "description": " الايدي بتاع صاحب البوت يبلف ",
         "value": "",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "description": "الجلسه اللي طلعتها من الاك المساعد يبلف",
         "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
-        "description": "Your Heroku account's API key",
+        "description": " مفتاح هيروكو اضغط هنا https://dashboard.heroku.com/account وروح علي اخر خانه وانسخه",
         "value": "",
         "required": false
       },
       "HEROKU_APP_NAME": {
-        "description": "Your heroku app/bot's name",
+        "description": "انسخ اول اسم اللي في المربع الاول يبلف",
         "value": "",
         "required": false
       },
       "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "description": "ارفع البوت والاك المساعد ادمن في جروب التخزين وهات ايدي الجروب حطو هنا ا.",
         "value": "",
         "required": true
       }
