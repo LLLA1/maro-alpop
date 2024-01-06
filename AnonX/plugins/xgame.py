@@ -8,7 +8,7 @@ from AnonX import app
 import re
 import sys
 
-GAME_MESSAGE = "⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺\n\n★¦ مرحبا بك عزيزي:\n★¦في قسم العاب cr\n\n⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺"
+GAME_MESSAGE = "⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺\n\n★¦ مرحبا بك عزيزي:\n★¦في قسم العاب البوب\n\n⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺"
 GAME_BUTTONS = [
     [ 
         InlineKeyboardButton ('★¦GAMES-3D', callback_data= 'GAME1'),
