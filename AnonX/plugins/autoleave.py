@@ -70,7 +70,7 @@ async def auto_end():
                 try:
                     await app.send_message(
                         chat_id,
-                        "» انا ماشي عشان المعرثين سابوني لوحدي ف الكول ونزلو  .",
+                        "» انا ماشي عشان المعرصين سابوني لوحدي ف الكول ونزلو  .",
                     )
                 except:
                     continue
