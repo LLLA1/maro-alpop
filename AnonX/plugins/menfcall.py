@@ -20,7 +20,7 @@ async def strcall(client, message):
             if info.muted == False:
                 mut="بيرغي 🗣"
             else:
-                mut="واكل سد الحنك 🔕"
+                mut="اخرص مش بيتكلم 🔕"
             user = await client.get_users(participant.user_id)
             k +=1
             text +=f"{k}➤{user.mention}➤{mut}\n"
@@ -29,7 +29,7 @@ async def strcall(client, message):
         await asyncio.sleep(5)
         await assistant.leave_group_call(message.chat.id)
     except NoActiveGroupCall:
-        await message.reply(f"عمووووو الكول مش مفتوح اصلااا\n❌")
+        await message.reply(f"افتح الكول يهطل بعد كدا اسال\n❌")
     except TelegramServerError:
         await message.reply(f"ارسل الامر تاني في مشكله في سيرفر التلجرام\n❌")
         
