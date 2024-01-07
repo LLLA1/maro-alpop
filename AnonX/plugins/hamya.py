@@ -23,7 +23,7 @@ async def ktm(_: Client, message: Message):
         else: await message.reply("- يجب ان تكون ادمن على الاقل لإستخدام هذا الامر.", reply_to_message_id=message.message_id)
 
 
-@app.on_message(filters.command("الغاء الكتم", "") & filters.group)
+@app.on_message(filters.command("الغاء الكتم", "الغاء كتم") & filters.group)
 async def unktm(_: Client, message: Message):
     if message.reply_to_message:
         member = requests.get(f"https://api.telegram.org/bot{app.bot_token}/getChatMember?chat_id={message.chat.id}&user_id={message.from_user.id}").json()
