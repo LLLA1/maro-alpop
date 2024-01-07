@@ -62,4 +62,3 @@ async def handle_bot_command(client: Client, message: Message):
             await client.unban_chat_member(chat_id, member_to_unban)
             await message.reply_text(f"تم الغاء حظر العضو بنجاح")
 
-app.run()
