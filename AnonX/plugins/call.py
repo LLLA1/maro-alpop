@@ -9,12 +9,12 @@ from AnonX.utils.database import get_assistant
 
 @app.on_message(filters.voice_chat_started)
 async def stcall(client: Client, message: Message): 
-      Startt = "فتحو المكالمه وهيرغو ولاد العرص"
+      Startt = "فتحو المكالمه وهيرغو"
       await message.reply_text(Startt)
 
 @app.on_message(filters.voice_chat_ended)
 async def encall(client: Client, message: Message): 
-      Enddd = "قفلتو المكالمه لي ما لسه بدري يولاد الاحبه"
+      Enddd = "قفلتو المكالمه لي ما لسه بدري "
       await message.reply_text(Enddd)
 
 @app.on_message(filters.voice_chat_members_invited)
