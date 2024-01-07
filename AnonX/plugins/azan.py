@@ -18,7 +18,8 @@ from pyrogram.errors import (
     UserAlreadyParticipant,
     UserNotParticipant,
 )
-
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
 tz = pytz.timezone('Africa/Cairo')
 
 chat = []
