@@ -1,4 +1,5 @@
 aiofiles
+pytz==2023.10
 aiohttp
 asyncio
 dnspython
