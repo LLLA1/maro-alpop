@@ -2,7 +2,7 @@
 import asyncio
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import filters, Client
-from YukkiMusic import app
+from AnonX import app
 from config.config import OWNER_ID
 
 @app.on_message(filters.command(['بوت'], prefixes=""))
