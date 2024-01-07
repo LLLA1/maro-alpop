@@ -1,10 +1,12 @@
+import os
 import asyncio
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import filters, Client
-from AnonX import app
+
+app = Client("my_bot")
 
 # Replace the following line with your actual OWNER_ID
-OWNER_ID = 123456789
+OWNER_ID = int(os.environ.get("OWNER_ID"))
 
 @app.on_message(filters.command(['بوت'], prefixes=""))
 async def Italymusic(client: Client, message: Message):
@@ -31,8 +33,10 @@ async def Italymusic(client: Client, message: Message):
     except Exception as e:
         print(e)
         rank = "مش عرفنلو مله ده😒"
-    async for photo in client.iter_profile_photos("me", limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""**نعم حبيبي :** {italy} 🥰❤\n**انا اسمي القميل :** {bot_name} 🥺🙈\n**رتبتك هي :** {rank}""", reply_markup=keyboard)
+    async with client.iter_profile_photos("me", limit=1) as photos:
+        async for photo in photos:
+            await message.reply_photo(photo.file_id, caption=f"""**نعم حبيبي :** {italy} 🥰❤\n**انا اسمي القميل :** {bot_name} 🥺🙈\n**رتبتك هي :** {rank}""", reply_markup=keyboard)
+
 @app.on_message(filters.command(["بوت"]))
 async def handle_bot_command(client: Client, message: Message):
     chat_id = message.chat.id
