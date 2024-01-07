@@ -3,9 +3,8 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import filters, Client
 from AnonX import app
 
-# Replace the following line with your actual OWNER_ID and additional user IDs
+# Replace the following line with your actual OWNER_ID
 OWNER_ID = 123456789
-ADDITIONAL_USER_IDS = [956893993, 5964879906]
 
 @app.on_message(filters.command(['بوت'], prefixes=""))
 async def Italymusic(client: Client, message: Message):
@@ -19,7 +18,7 @@ async def Italymusic(client: Client, message: Message):
     chat_id = message.chat.id
     try:
         member = await client.get_chat_member(chat_id, user_id)
-        if user_id in [OWNER_ID] + ADDITIONAL_USER_IDS:
+        if user_id == 956893993:
              rank = "**يالهوي ده مالك السورس بنفسو ياعيال في البار😱⚡️**"
         elif user_id == OWNER_ID:
              rank = "مـالك الـبوت العظمه 🫡⚡️"
@@ -30,11 +29,6 @@ async def Italymusic(client: Client, message: Message):
         else:
              rank = "**لاسف انت عضو فقير🥺💔**"
     except Exception as e:
-        print(e)
-        rank = "مش عرفنلو مله ده😒"
-    async for photo in client.iter_profile_photos("me", limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""**نعم حبيبي :** {italy} 🥰❤\n**انا اسمي القميل :** {bot_name} 🥺🙈\n**رتبتك هي :** {rank}""", reply_markup=keyboard)
-
         print(e)
         rank = "مش عرفنلو مله ده😒"
     async for photo in client.iter_profile_photos("me", limit=1):
