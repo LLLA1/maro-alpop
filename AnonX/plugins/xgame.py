@@ -282,14 +282,14 @@ async def dfrewq(client, message):
   await message.reply_text(f"تم تنزيل العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n خلاث كلبه تحولت الانسان😿😹")  
   
   
-@app.on_message(command("رفع طيز"))
+@app.on_message(command("رفع اخويا"))
 async def ssoss(client, message):
-  await message.reply_text(f"تم رفع العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n طيز و كبيره كمان😹🤞")
+  await message.reply_text(f"تم رفع العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\nاخويا وشق الشقايق يعم😹🤞")
 
 
-@app.on_message(command("تنزيل طيز"))
+@app.on_message(command("تنزيل اخويا"))
 async def nobo(client, message):
-  await message.reply_text(f"تم تنزيل العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n طيز متزعلش نزلتك😹🫶")  
+  await message.reply_text(f"تم تنزيل العضو\n│ \n└ʙʏ : {message.reply_to_message.from_user.mention}\n\n لا اخويا ولا اعرفك اصلا امي مبتجبش خولات😹🫶")  
   
   
 @app.on_message(command("رفع حرامي"))
