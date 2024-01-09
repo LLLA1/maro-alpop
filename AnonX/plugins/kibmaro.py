@@ -59,7 +59,7 @@ REPLY_MESSAGE_BUTTONS = [
         ("ابراج")
     ],
     [
-        ("يـوتيوب. 📽")
+        ("يـوتيوب")
         
     ],
     [
@@ -96,7 +96,7 @@ async def down(client, message):
 
 
 
-@app.on_message(filters.regex("يـوتيوب. 📽"))
+@app.on_message(filters.regex("يـوتيوب"))
 async def reply_to_HEY(client, message):
     await message.reply_photo(
         photo=f"https://telegra.ph//file/8a417ee5ee410523952b3.jpg",
