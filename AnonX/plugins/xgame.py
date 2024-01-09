@@ -367,7 +367,7 @@ async def callback_query(client, CallbackQuery):
                       InlineKeyboardButton ('★¦العاب 3D', callback_data= 'GAME1'),
                       InlineKeyboardButton ('★¦العاب cr', callback_data= 'GAME2')
                       ],[
-        InlineKeyboardButton ('⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺', url =f"https://t.me/pp_g3")              
+        InlineKeyboardButton ('⩹━⊷⌯⌞ 𖧊 𝐒𝐎𝐔𝐑𝐂𝐄 𝐀𝐋𝐏𝐎𝐏 𖧊 ⌝⌯⊶━⩺', url =f"https://t.me/SOURCE_ALPOP")              
                  ],[
                 InlineKeyboardButton(
                         "◁", callback_data="close"),
