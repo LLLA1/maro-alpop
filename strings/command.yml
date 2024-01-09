@@ -37,7 +37,7 @@ TAG_COMMAND_STOP : ["all stop"]
 
 # Admin Commands
 AUTH_COMMAND : ["auth", "رفع ادمن"]
-UNAUTH_COMMAND : ["unauth", "ت ادمن"]
+UNAUTH_COMMAND : ["unauth", "تنزيل ادمن"]
 AUTHUSERS_COMMAND : ["authusers", "الادمن"]
 PAUSE_COMMAND : ["pause", "cpause", "وقف", "#وقف", "/pause", "/cpause", "/وقف", "/ق وقف"]
 RESUME_COMMAND : ["resume", "cresume", "كمل", "#كمل", "/resume", "/cresume", "/ق كمل", "كمل", "#كملي"]
@@ -54,7 +54,7 @@ RESTART_COMMAND : ["restart", "ريستارت", "ريلود"]
 
 # Sudo Command
 ADDSUDO_COMMAND : ["addsudo", "رفع ثانوي"]
-DELSUDO_COMMAND : ["delsudo", "ت ثانوي"]
+DELSUDO_COMMAND : ["delsudo", "تنزيل ثانوي"]
 SUDOUSERS_COMMAND : ["sudolist", "الثانويين"]
 
 #Broadcast 
@@ -106,5 +106,5 @@ ACTIVEVIDEO_COMMAND : ["activevideo"]
 
 #Gban Commands
 GBAN_COMMAND : ["gban", "حظر عام"]
-UNGBAN_COMMAND : ["ungban", "الغاء الحظر العام"]
+UNGBAN_COMMAND : ["ungban", "الغاء حظر العام"]
 GBANNED_COMMAND : ["gbannedusers", "المحظورين عام"]
