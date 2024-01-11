@@ -1,4 +1,4 @@
-تimport asyncio
+import asyncio
 
 import os
 import time
