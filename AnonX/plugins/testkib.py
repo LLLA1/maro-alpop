@@ -12,12 +12,6 @@ from pyrogram.errors import PeerIdInvalid
 
 bot_id = app.bot_token.split(":")[0]
 
-# create a Redis client
-r = redis.Redis(
-  host='redis-13524.c84.us-east-1-2.ec2.cloud.redislabs.com',
-  port=13524,
-  password='J2tSRdAbiuSaFU3ROH2UqWWTahWR00b9')
-
 
 Keyard = ReplyKeyboardMarkup(
   [
