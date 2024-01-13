@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from AnonX import app
 from config import OWNER_ID
 
-@app.on_message(filters.command(['مهنتي','✨مهنتي'], prefixes=""))
+@app.on_message(filters.command(['مهنتي', '✨مهنتي'], prefixes=""))
 def get_user_info(_, message):
     url = f"https://t.me/{message.from_user.username}"
     age = random.randint(15, 25)
@@ -18,14 +18,13 @@ def get_user_info(_, message):
             [InlineKeyboardButton(f"عـمـرك :  {age}", callback_data=f"age_{age}")],
             [InlineKeyboardButton(f"مـهـنـتـك :  {job}", callback_data=f"job_{job}")],
             [InlineKeyboardButton(f"حـالـتـك :  {status}", callback_data=f"status_{status}")], 
-            [InlineKeyboardButton("𝑆𝑂𝐔𝑅𝐶𝐸 𝐴𝐿𝑃𝑂𝑃", url=f"https://t.me/source_alpop")]
+            [InlineKeyboardButton("𝑆𝑂𝐮𝑟𝑐𝑒 𝐴𝐿𝑃𝑂𝑃", url=f"https://t.me/source_alpop")]
         ]
     )
     app.send_photo(
         chat_id=message.chat.id,
         photo=url,
-        reply_markup=inline_keyboard,
-        reply_to_message_id=message.id
+        reply_markup=inline_keyboard
     )
-    
+
 print("OKAY MUSIC CODE WORKING NOW ⚡")
