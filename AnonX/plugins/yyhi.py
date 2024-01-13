@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from strings.filters import command
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
-from config import SUPPORT_CHANNEL, AnonX_NAME, CHANNEL_SUDO
+from config import SUPPORT_CHANNEL, CHANNEL_SUDO
 from AnonX import app
 
 from env import MUST_JOIN
