@@ -55,7 +55,7 @@ def start(client, message):
     else:
         message.reply("هناك لعبة جارية بالفعل في هذه الدردشة. انتظر حتى تنتهي.")
 
-@app.on_callback_query(filters.regex("join"))
+@app.on_callback_query(filters.regex(r"^join$"))
 def join(client, callback_query):
     if callback_query.message.chat.id in game_state:
         if callback_query.from_user.first_name != game_state[callback_query.message.chat.id]["player1"]["name"]:
@@ -66,9 +66,8 @@ def join(client, callback_query):
                     [
                         [InlineKeyboardButton("حجرة", callback_data="حجرة"),
                          InlineKeyboardButton("ورقة", callback_data="ورقة"),
-                         InlineKeyboardButton("مقص", callback_data="مقص")],[
-                         InlineKeyboardButton("●━◉⟞⟦ 𝙨𝙤𝙪𝙧𝙘𝙚 𝙨𝙚𝙯𝙖𝙧 ⟧⟝◉━●", url="https://t.me/UIU_II")
-                         ]
+                         InlineKeyboardButton("مقص", callback_data="مقص")],
+                         [InlineKeyboardButton("●━◉⟞⟦ ⟧⟝◉━●", url="https://t.me/source_alpop")]
                     ]
                 )
             )
@@ -76,49 +75,3 @@ def join(client, callback_query):
             callback_query.answer("انت منضم للعبه بالفعل", show_alert=True)
     else:
         callback_query.answer("لا توجد لعبة جارية في هذه الدردشة.", show_alert=True)
-
-@app.on_callback_query(filters.regex("^(حجرة|ورقة|مقص)$"))
-def choose(client, callback_query):
-    if callback_query.message.chat.id in game_state:
-        user_choice = callback_query.data
-        bot_choice = choice(options)
-        user_name = callback_query.from_user.first_name
-        bot_name = client.get_me().first_name
-
-        if user_name == game_state[callback_query.message.chat.id]["player1"]["name"]:
-            game_state[callback_query.message.chat.id]["player1"]["choice"] = user_choice
-            callback_query.message.edit(
-                f"👨‍💼 اللاعب الأول: {game_state[callback_query.message.chat.id]['player1']['name']} لقد لعب \n\n👨‍💼 اللاعب الثاني: {game_state[callback_query.message.chat.id]['player2']['name']} اختر الآن...",
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [InlineKeyboardButton("حجرة", callback_data="حجرة"),
-                         InlineKeyboardButton("ورقة", callback_data="ورقة"),
-                         InlineKeyboardButton("مقص", callback_data="مقص")],
-                         [InlineKeyboardButton("●━◉⟞⟦ 𝙨𝙤𝙪𝙧𝙘𝙚 𝙨𝙚𝙯𝙖𝙧 ⟧⟝◉━●", url="https://t.me/UIU_II")]
-                    ]
-                )
-            )
-        elif user_name == game_state[callback_query.message.chat.id]["player2"]["name"]:
-            if game_state[callback_query.message.chat.id]["player1"]["choice"] is None:
-                callback_query.answer("لا يمكنك اللعب حتى يلعب اللاعب الأول.", show_alert=True)
-            else:
-                game_state[callback_query.message.chat.id]["player2"]["choice"] = user_choice
-                winner = get_winner(callback_query.message.chat.id)
-                name_player1 = game_state[callback_query.message.chat.id]['player1']['name']
-                name_player2 = game_state[callback_query.message.chat.id]['player2']['name']
-                choice_player1 = game_state[callback_query.message.chat.id]['player1']['choice']
-                choice_player2 = game_state[callback_query.message.chat.id]['player2']['choice']
-                player1_score = game_state[callback_query.message.chat.id]['player1']['score']
-                player2_score = game_state[callback_query.message.chat.id]['player2']['score']
-                callback_query.message.edit(
-                    f"⌯━─━─━─━──━─━─━─━─━─━─━──━⌯\n\n⚠️ الإسم : {name_player1}\n\n❓ الإختيار : {choice_player1}\n\n🛒 النقاط : {player1_score}\n\n⌯━─━─━─━──━─━─━─━─━─━─━──━⌯\n\n⚠️ الإسم : {name_player2}\n\n❓ الإختيار : {choice_player2}\n\n🛒 النقاط : {player2_score}\n\n⌯━─━─━─━──━─━─━─━─━─━─━──━⌯\n\n🕺 اللاعب الفائز هو ⤵️ \n\n{winner}\n\n⌯━─━─━─━──━─━─━─━─━─━─━──━⌯"
-                )
-                del game_state[callback_query.message.chat.id]
-        else:
-            callback_query.answer("أنت لست جزء من هذه اللعبة.", show_alert=True)
-    else:
-        callback_query.answer("لا توجد لعبة جارية في هذه الدردشة.", show_alert=True)
-
-
-
-
