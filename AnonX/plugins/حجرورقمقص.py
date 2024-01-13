@@ -48,7 +48,7 @@ def start(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("اضغط للعب", callback_data="join")],
-                    [InlineKeyboardButton("●━◉⟞⟦ 𝙨𝙤𝙪𝙧𝙘𝙚 𝙨𝙚𝙯𝙖𝙧 ⟧⟝◉━●", url="https://t.me/UIU_II")]
+                    [InlineKeyboardButton("𝑆𝑂𝐔𝑅𝐶𝐸 𝐴𝐿𝑃𝑂𝑃", url="https://t.me/source_alpop")]
                 ]
             )
         )
