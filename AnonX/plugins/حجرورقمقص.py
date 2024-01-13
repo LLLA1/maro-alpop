@@ -57,21 +57,16 @@ def start(client, message):
 
 @app.on_callback_query(filters.regex(r"^join$"))
 def join(client, callback_query):
-    if callback_query.message.chat.id in game_state:
-        if callback_query.from_user.first_name != game_state[callback_query.message.chat.id]["player1"]["name"]:
-            game_state[callback_query.message.chat.id]["player2"]["name"] = callback_query.from_user.first_name
-            callback_query.message.edit(
-                f"{game_state[callback_query.message.chat.id]['player1']['name']} و {game_state[callback_query.message.chat.id]['player2']['name']} يلعبان حجرة ورقة مقص.\n\n👨‍💼 دور اللاعب: {game_state[callback_query.message.chat.id]['player1']['name']}",
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [InlineKeyboardButton("حجرة", callback_data="حجرة"),
-                         InlineKeyboardButton("ورقة", callback_data="ورقة"),
-                         InlineKeyboardButton("مقص", callback_data="مقص")],
-                         [InlineKeyboardButton("●━◉⟞⟦ ⟧⟝◉━●", url="https://t.me/source_alpop")]
-                    ]
-                )
-            )
-        else:
-            callback_query.answer("انت منضم للعبه بالفعل", show_alert=True)
-    else:
-        callback_query.answer("لا توجد لعبة جارية في هذه الدردشة.", show_alert=True)
+    print("Before editing message")  # Add this line
+    callback_query.message.edit(
+        f"{game_state[callback_query.message.chat.id]['player1']['name']} و {game_state[callback_query.message.chat.id]['player2']['name']} يلعبان حجرة ورقة مقص.\n\n👨‍💼 دور اللاعب: {game_state[callback_query.message.chat.id]['player1']['name']}",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [InlineKeyboardButton("حجرة", callback_data="حجرة"),
+                 InlineKeyboardButton("ورقة", callback_data="ورقة"),
+                 InlineKeyboardButton("مقص", callback_data="مقص")],
+                 [InlineKeyboardButton("●━◉⟞⟦ 𝙨𝙤𝙪𝙧𝙘𝙚 ⟧⟝◉━●", url="https://t.me/source_alpop")]
+            ]
+        )
+    )
+    print("After editing message")  # Add this line
