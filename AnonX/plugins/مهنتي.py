@@ -1,7 +1,7 @@
 import random
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from AnonXMusic import app
+from AnonX import app
 from config import OWNER_ID
 
 @app.on_message(filters.command(['مهنتي','✨مهنتي'], prefixes=""))
