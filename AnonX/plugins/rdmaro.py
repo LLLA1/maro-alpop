@@ -176,10 +176,10 @@ async def caesar(client: Client, message: Message):
         f"{a}")   
 
 shtxt = [
-" ارغي ومتصدعنيش"
+" اعمك مارو يبلف"
         ]
 
-@app.on_message(filters.command(["بوت"], ""), group=29773)
+@app.on_message(filters.command(["مارو"], ""), group=29773)
 
 async def caesar(client: Client, message: Message):
 
@@ -190,10 +190,10 @@ async def caesar(client: Client, message: Message):
         f"{a}")   
 
 dhtxt = [
-" عدل وشك ونت بتكلمني 😒🙄"
+" عمك البوب يبلف"
         ]
 
-@app.on_message(filters.command(["😒"], ""), group=2873)
+@app.on_message(filters.command(["بوب"], ""), group=2873)
 
 async def caesar(client: Client, message: Message):
 
