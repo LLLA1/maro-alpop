@@ -5,30 +5,33 @@ from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForb
 from config import SUPPORT_CHANNEL, AnonX_NAME, CHANNEL_SUDO
 from AnonX import app
 
+from env import MUST_JOIN
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
+from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
 
-@app.on_message(~filters.edited & filters.incoming & filters.private, group=-1)
+
+@Client.on_message(filters.incoming & filters.private, group=-1)
 async def must_join_channel(bot: Client, msg: Message):
-    if not SUPPORT_CHANNEL:  # Not compulsory
+    if not MUST_JOIN:  # Not compulsory
         return
     try:
         try:
-            await bot.get_chat_member(CHANNEL_SUDO, msg.from_user.id)
+            await bot.get_chat_member(MUST_JOIN, msg.from_user.id)
         except UserNotParticipant:
-            if SUPPORT_CHANNEL.isalpha():
-                link = u"{SUPPORT_CHANNEL}"
+            if MUST_JOIN.isalpha():
+                link = "https://t.me/" + MUST_JOIN
             else:
-                chat_info = await bot.get_chat(CHANNEL_SUDO)
+                chat_info = await bot.get_chat(MUST_JOIN)
                 link = chat_info.invite_link
             try:
-                await msg.reply(
-                    f"◇︰ عذراً، عليك الانضمام الى هذهِ القناة أولاً\n◇︰ اشترك ثم أرسل : /start",
-                    disable_web_page_preview=True,
+                await msg.reply_photo(photo="https://graph.org/file/a0905ed81cdf253ca104b.jpg", caption=f"↯︙ عـݪـيك اެݪاެشـتراެك فـي قـنـاެة اެݪـبـوت 📻 .\n↯︙يوزر القناة ( {link} ) .",
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton(f"{AnonX_NAME}", url=link)]
+                        [InlineKeyboardButton("اضغط هنا للاشتراك💤", url=f"{link}")]
                     ])
                 )
                 await msg.stop_propagation()
             except ChatWriteForbidden:
                 pass
     except ChatAdminRequired:
-        print(f"عليك رفع البوت آدمن في القناة أولاً ؟؟ : {SUPPORT_CHANNEL} !")
+        print(f"Promote me as an admin in the MUST_JOIN chat : {MUST_JOIN} !")
