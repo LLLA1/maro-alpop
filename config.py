@@ -106,6 +106,8 @@ SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
 
 SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
 
+START_IMG_URL = "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg"
+
 
 def time_to_seconds(time):
     stringt = str(time)
@@ -132,5 +134,3 @@ if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
             PING_IMG_URL = "https://telegra.ph/file/f698f60484b7aef0d6f29.jpg"
-
- START_IMG_URL = "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg"
