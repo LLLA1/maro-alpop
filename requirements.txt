@@ -1,5 +1,6 @@
 aiofiles
 aiohttp
+pip install --upgrade aiohttp
 asyncio
 dnspython
 ffmpeg-python
